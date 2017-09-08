@@ -1,0 +1,58 @@
+<!Doctype html>
+
+<html lang="eng-us">
+
+<head>
+<meta charset="utf-8">
+<title> Rock, Paper, Scissors Game </title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/javascript" type="text/javascript"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBDCQc7uuVVK-UPJGiSjk2khh5v3KIUU6Y",
+    authDomain: "rps-multiplayer-ff2a3.firebaseapp.com",
+    databaseURL: "https://rps-multiplayer-ff2a3.firebaseio.com",
+    projectId: "rps-multiplayer-ff2a3",
+    storageBucket: "",
+    messagingSenderId: "948549677538"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<body>
+
+<h1>Rock Paper Scissors</h1>
+<h3>2 player game</h3>
+
+<div class="player1">
+  <h2>Player One</h2>
+    <div id= choose1>
+      <h3>Choose Rock, Paper or Scissors</h3>
+        <div id= win1>
+          <div id=losses1>
+            <div id=ties1>
+</div>
+    </div>
+        </div>
+          </div>
+        </div>
+
+
+<div class="player2">
+<h2>Player Two</h2>
+<div id= choose2>
+<h3>Choose Rock, Paper or Scissors</h3>
+<div id= win2>
+<div id=losses2>
+<div id=ties2>
+</div>
+    </div>
+        </div>
+          </div>
+        </div>
+
+</body>
+</html>
