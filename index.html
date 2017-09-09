@@ -7,6 +7,7 @@
 <title> Rock, Paper, Scissors Game </title>
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/javascript" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -31,6 +32,8 @@
   <h2>Player One</h2>
     <div id= choose1>
       <h3>Choose Rock, Paper or Scissors</h3>
+      <input type="text" id="input1" placeholder="Enter your choice here" />
+      <button id="btn1">Submit</button>
         <div id= win1>
           <div id=losses1>
             <div id=ties1>
@@ -45,6 +48,8 @@
 <h2>Player Two</h2>
 <div id= choose2>
 <h3>Choose Rock, Paper or Scissors</h3>
+<input type="text" id="input2" placeholder="Enter your choice here" />
+<button id="btn2">Submit</button>
 <div id= win2>
 <div id=losses2>
 <div id=ties2>

@@ -22,8 +22,10 @@ document.onkeyup = function(event) {
 
 // choose1.textcontent = event.key;
 var player1 = String.fromCharCode(event.keyCode).toLowerCase();
-var player2 = String.fromCharCode(event.keyCode).toLowerCase();
+player1 = document.getElementById('input1');
 
+var player2 = String.fromCharCode(event.keyCode).toLowerCase();
+player2 = document.getElementById('input2');
 
 if ((player1 === 'r') && (player2 === 's')) {
   wins1++;
@@ -48,12 +50,17 @@ if ((player1 === 'r') && (player2 === 's')) {
   losses1++;
 }
 
+
 document.getElementById("wins1") = wins1;
 document.getElementById("wins2") = wins2;
 document.getElementById("losses1") = losses1;
 document.getElementById("losses2") = losses2;
 document.getElementById("ties1") = ties1;
 document.getElementById("ties2") = ties2;
+
+
+
+
 
 </script>
 </body>
