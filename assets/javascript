@@ -22,10 +22,14 @@ document.onkeyup = function(event) {
 
 // choose1.textcontent = event.key;
 var player1 = String.fromCharCode(event.keyCode).toLowerCase();
-player1 = document.getElementById('input1');
+// player1 = document.getElementById('input1');
 
 var player2 = String.fromCharCode(event.keyCode).toLowerCase();
-player2 = document.getElementById('input2');
+// player2 = document.getElementById('input2');
+
+$(document).ready(function() {
+$("#btn1").on("click", function() {
+
 
 if ((player1 === 'r') && (player2 === 's')) {
   wins1++;
@@ -49,14 +53,42 @@ if ((player1 === 'r') && (player2 === 's')) {
   wins2++;
   losses1++;
 }
+});
 
+console.log(player1);
 
-document.getElementById("wins1") = wins1;
-document.getElementById("wins2") = wins2;
-document.getElementById("losses1") = losses1;
-document.getElementById("losses2") = losses2;
-document.getElementById("ties1") = ties1;
-document.getElementById("ties2") = ties2;
+$("#btn2").on("click", function() {
+  if ((player1 === 'r') && (player2 === 's')) {
+    wins1++;
+    losses2++;
+  } else if ((player1 === 'r') && (player2 === 'p'))  {
+    wins2++;
+    losses1++;
+  } else if (player1 === player2) {
+    ties2++;
+    ties1++;
+  } else if ((player1 === 's') && (player2 === 'r'))  {
+    wins1++;
+    losses2++;
+  } else if ((player1 === 's') && (player2 === 'p'))  {
+    wins1++;
+    losses2++;
+  } else if ((player1 === 'p') && (player2 === 'r'))  {
+    wins1++;
+    losses2++;
+  } else if  ((player1 === 'p') && (player2 ==='s')){
+    wins2++;
+    losses1++;
+  }
+});
+
+//
+// document.getElementById("wins1") = wins1;
+// document.getElementById("wins2") = wins2;
+// document.getElementById("losses1") = losses1;
+// document.getElementById("losses2") = losses2;
+// document.getElementById("ties1") = ties1;
+// document.getElementById("ties2") = ties2;
 
 
 
